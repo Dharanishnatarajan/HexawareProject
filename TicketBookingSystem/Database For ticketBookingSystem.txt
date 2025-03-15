@@ -1,13 +1,9 @@
--- Step 1: Create the database
 CREATE DATABASE TicketBookingSystem;
 GO
 
--- Step 2: Switch to the newly created database
 USE TicketBookingSystem;
 GO
 
-
--- Step 3: Create the Venue table
 CREATE TABLE Venue (
     venue_id INT IDENTITY(1,1) PRIMARY KEY,
     venue_name VARCHAR(255) NOT NULL,
@@ -15,7 +11,6 @@ CREATE TABLE Venue (
 );
 GO
 
--- Step 4: Create the Event table with a foreign key reference to Venue
 CREATE TABLE Event (
     event_id INT IDENTITY(1,1) PRIMARY KEY,
     event_name VARCHAR(255) NOT NULL,
@@ -30,7 +25,6 @@ CREATE TABLE Event (
 );
 GO
 
--- Step 5: Create the Customer table
 CREATE TABLE Customer (
     customer_id INT IDENTITY(1,1) PRIMARY KEY,
     customer_name VARCHAR(255) NOT NULL,
@@ -39,7 +33,6 @@ CREATE TABLE Customer (
 );
 GO
 
--- Step 6: Create the Booking table with foreign key references to Customer and Event
 CREATE TABLE Booking (
     booking_id INT IDENTITY(1,1) PRIMARY KEY,
     customer_id INT NOT NULL,
