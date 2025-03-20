@@ -44,3 +44,93 @@ CREATE TABLE Booking (
     FOREIGN KEY (event_id) REFERENCES Event(event_id) ON DELETE CASCADE
 );
 GO
+
+INSERT INTO Venue (venue_name, address) VALUES
+('Chennai Trade Centre', 'Nandambakkam, Chennai, Tamil Nadu'),
+('Jawaharlal Nehru Stadium', 'Periamet, Chennai, Tamil Nadu'),
+('Kamarajar Arangam', 'Teynampet, Chennai, Tamil Nadu'),
+('Coimbatore Codissia', 'Peelamedu, Coimbatore, Tamil Nadu'),
+('Madurai Tamukkam Ground', 'Tamukkam, Madurai, Tamil Nadu'),
+('Sathyam Cinemas', 'Royapettah, Chennai, Tamil Nadu'),
+('PVR Cinemas', 'Phoenix MarketCity, Chennai, Tamil Nadu'),
+('VR Mall Cinema', 'Anna Nagar, Chennai, Tamil Nadu'),
+('Greenfield Stadium', 'Kariavattom, Thiruvananthapuram, Kerala'),
+('Eden Gardens', 'BBD Bagh, Kolkata, West Bengal');
+
+INSERT INTO Event (event_name, event_date, event_time, venue_id, total_seats, available_seats, ticket_price, event_type) VALUES
+('IPL Final Cup 2025', '2025-05-20', '19:30:00', 1, 50000, 10000, 2500, 'Sports'),
+('India vs Australia T20', '2025-06-10', '18:00:00', 2, 40000, 5000, 2000, 'Sports'),
+('Bollywood Night with Arijit Singh', '2025-07-15', '20:00:00', 3, 30000, 7000, 1500, 'Concert'),
+('Kollywood Music Awards', '2025-08-25', '19:00:00', 4, 25000, 6000, 1800, 'Concert'),
+('Kabaddi League Final', '2025-09-12', '20:30:00', 5, 35000, 8000, 1200, 'Sports'),
+('Movie Premiere: Leo 2', '2025-10-01', '21:00:00', 6, 10000, 2000, 1000, 'Movie'),
+('Coke Studio Live Chennai', '2025-11-22', '19:00:00', 7, 15000, 5000, 1800, 'Concert'),
+('Sunburn Goa', '2025-12-25', '17:00:00', 8, 20000, 4000, 3000, 'Concert'),
+('Ranji Trophy Final', '2026-01-18', '14:30:00', 9, 25000, 10000, 900, 'Sports'),
+('India vs Pakistan Test Match', '2026-02-28', '10:00:00', 10, 60000, 20000, 2800, 'Sports');
+
+
+
+INSERT INTO Customer (customer_name, email, phone_number) VALUES
+('Kalki', 'kalki@gmail.com', '9876543210'),
+('Manoj', 'manoj@gmail.com', '8765432109'),
+('Bharathi', 'bharathi@gmail.com', '9654321098'),
+('Dharanish', 'dharanish@gmail.com', '8543210987'),
+('Balaji', 'balaji@gmail.com', '9432109876'),
+('Sanjay', 'sanjay@gmail.com', '9321098765'),
+('Haini', 'haini@gmail.com', '9210987654'),
+('Aarthi', 'aarthi@gmail.com', '9109876543'),
+('Dhanushkumar', 'dhanushkumar@gmail.com', '9998765432'),
+('Abirami', 'abirami@gmail.com', '9888776655');
+
+INSERT INTO Booking (customer_id, event_id, num_tickets, total_cost, booking_date) VALUES
+(1, 1, 4, 10000, '2025-04-15'),
+(2, 2, 2, 4000, '2025-05-01'),
+(3, 3, 5, 7500, '2025-06-10'),
+(4, 4, 3, 5400, '2025-07-20'),
+(5, 5, 1, 1200, '2025-08-01'),
+(6, 6, 2, 2000, '2025-09-05'),
+(7, 7, 6, 10800, '2025-10-20'),
+(8, 8, 3, 9000, '2025-11-10'),
+(9, 9, 2, 1800, '2025-12-15'),
+(10, 10, 4, 11200, '2026-01-25');
+
+
+SELECT * FROM Venue;
+SELECT * FROM Event;
+SELECT * FROM Customer;
+SELECT * FROM Booking;
+
+
+-- 2: How do I retrieve all events from the Event table?
+SELECT * FROM Event;
+
+-- 3: How do I find events that still have tickets available?
+SELECT * FROM Event WHERE available_seats > 0;
+
+-- 4: How do I find events with 'cup' anywhere in their name?
+SELECT * FROM Event WHERE event_name LIKE '%cup%';
+
+-- 5: How do I find events that have ticket prices between ₹1000 and ₹2500?
+SELECT * FROM Event WHERE ticket_price BETWEEN 1000 AND 2500;
+
+-- 6: How do I get events happening between June 1st and July 31st, 2025?
+SELECT * FROM Event WHERE event_date BETWEEN '2025-06-01' AND '2025-07-31';
+
+-- 7: How do I find available events that include "Concert" in their name?
+SELECT * FROM Event WHERE available_seats > 0 AND event_name LIKE '%Concert%';
+
+-- 8: How do I fetch users in groups of 5, skipping the first 5?
+SELECT * FROM Customer ORDER BY customer_id OFFSET 5 ROWS FETCH NEXT 5 ROWS ONLY;
+
+-- 9: How do I find bookings where customers booked more than 4 tickets?
+SELECT * FROM Booking WHERE num_tickets > 4;
+
+-- 10: How do I find customers whose phone number ends with '000'?
+SELECT * FROM Customer WHERE phone_number LIKE '%000';
+
+-- 11: How do I list events with more than 15,000 seats in order?
+SELECT * FROM Event WHERE total_seats > 15000 ORDER BY total_seats DESC;
+
+-- 12: How do I select events whose names do NOT start with 'X', 'Y', or 'Z'?
+SELECT * FROM Event WHERE event_name NOT LIKE 'X%' AND event_name NOT LIKE 'Y%' AND event_name NOT LIKE 'Z%';
