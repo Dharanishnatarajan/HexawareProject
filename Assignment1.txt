@@ -1,0 +1,175 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.WriteLine("\nChoose an operation:");
+            Console.WriteLine("1. Check if two numbers are equal");
+            Console.WriteLine("2. Check if a number is positive/negative");
+            Console.WriteLine("3. Perform arithmetic operations");
+            Console.WriteLine("4. Show multiplication table");
+            Console.WriteLine("5. Sum two numbers (triple if equal)");
+            Console.WriteLine("0. Exit");
+            Console.Write("Enter your choice (0-5): ");
+
+            string? choice = Console.ReadLine();
+            if (string.IsNullOrEmpty(choice))
+            {
+                Console.WriteLine("No input received. Please try again.");
+                continue;
+            }
+
+            switch (choice)
+            {
+                case "1":
+                    CheckNumbersEqual();
+                    break;
+                case "2":
+                    CheckPosNeg();
+                    break;
+                case "3":
+                    ArithmeticOperations();
+                    break;
+                case "4":
+                    MultiplicationTable();
+                    break;
+                case "5":
+                    SumTriple();
+                    break;
+                case "0":
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice! Please try again.");
+                    break;
+            }
+        }
+    }
+
+    static void CheckNumbersEqual()
+    {
+        try
+        {
+            Console.Write("Enter first number: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine(x == y ? $"{x} and {y} are equal" : $"{x} and {y} are not equal");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid number format!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    static void CheckPosNeg()
+    {
+        try
+        {
+            Console.Write("Enter a number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(num >= 0 ? $"{num} is positive" : $"{num} is negative");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid number format!");
+        }
+    }
+
+    static void ArithmeticOperations()
+    {
+        try
+        {
+            Console.Write("Enter first number: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            
+            Console.Write("Enter operation (+, -, *, /): ");
+            string? opInput = Console.ReadLine();
+            if (string.IsNullOrEmpty(opInput) || opInput.Length != 1)
+            {
+                Console.WriteLine("Invalid operator input!");
+                return;
+            }
+            char op = opInput[0];
+            
+            Console.Write("Enter second number: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            switch (op)
+            {
+                case '+':
+                    Console.WriteLine($"{x} {op} {y} = {x + y}");
+                    break;
+                case '-':
+                    Console.WriteLine($"{x} {op} {y} = {x - y}");
+                    break;
+                case '*':
+                    Console.WriteLine($"{x} {op} {y} = {x * y}");
+                    break;
+                case '/':
+                    if (y == 0)
+                    {
+                        Console.WriteLine("Cannot divide by zero!");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{x} {op} {y} = {x / y}");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Invalid operator!");
+                    break;
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid number format!");
+        }
+    }
+
+    static void MultiplicationTable()
+    {
+        try
+        {
+            Console.Write("Enter a number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine($"Multiplication table for {num}:");
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{num} * {i} = {num * i}");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid number format!");
+        }
+    }
+
+    static void SumTriple()
+    {
+        try
+        {
+            Console.Write("Enter first number: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            
+            int sum = x + y;
+            Console.WriteLine(x == y 
+                ? $"Triple of sum: {3 * sum}" 
+                : $"Sum: {sum}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid number format!");
+        }
+    }
+}
