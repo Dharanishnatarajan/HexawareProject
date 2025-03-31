@@ -1,0 +1,153 @@
+using System;
+
+namespace Assignment2;
+class Program
+{
+    static void Main()
+    {
+        while (true)
+        {
+            Console.WriteLine("\n=== Assignment Menu ===");
+            Console.WriteLine("1. Swap Two Numbers");
+            Console.WriteLine("2. Display Number Four Times");
+            Console.WriteLine("3. Display Day Name");
+            Console.WriteLine("4. Array Operations (Average, Min, Max)");
+            Console.WriteLine("5. Marks Analysis");
+            Console.WriteLine("6. Copy Array");
+            Console.WriteLine("0. Exit");
+            Console.Write("Enter your choice (0-6): ");
+
+            string? choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    SwapNumbers();
+                    break;
+                case "2":
+                    DisplayNumberFourTimes();
+                    break;
+                case "3":
+                    DisplayDayName();
+                    break;
+                case "4":
+                    ArrayOperations();
+                    break;
+                case "5":
+                    MarksAnalysis();
+                    break;
+                case "6":
+                    CopyArray();
+                    break;
+                case "0":
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice! Please try again.");
+                    break;
+            }
+        }
+    }
+
+    static void SwapNumbers()
+    {
+        Console.Write("Enter first number: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter second number: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine($"Before swap: a = {a}, b = {b}");
+        
+        // Swap using tuple
+        (a, b) = (b, a);
+        
+        Console.WriteLine($"After swap: a = {a}, b = {b}");
+    }
+
+    static void DisplayNumberFourTimes()
+    {
+        Console.Write("Enter a digit: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine($"{num} {num} {num} {num}");
+        Console.WriteLine($"{num}{num}{num}{num}");
+        Console.WriteLine($"{num} {num} {num} {num}");
+        Console.WriteLine($"{num}{num}{num}{num}");
+    }
+
+    static void DisplayDayName()
+    {
+        string[] days = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+        
+        Console.Write("Enter day number (1-7): ");
+        int dayNum = Convert.ToInt32(Console.ReadLine());
+        
+        if (dayNum >= 1 && dayNum <= 7)
+            Console.WriteLine(days[dayNum - 1]);
+        else
+            Console.WriteLine("Invalid day number!");
+    }
+
+    static void ArrayOperations()
+    {
+        int[] numbers = new int[5];
+        int sum = 0;
+        
+        Console.WriteLine("Enter 5 integers:");
+        for (int i = 0; i < 5; i++)
+        {
+            numbers[i] = Convert.ToInt32(Console.ReadLine());
+            sum += numbers[i];
+        }
+        
+        Array.Sort(numbers);
+        
+        Console.WriteLine($"Average: {(double)sum / 5}");
+        Console.WriteLine($"Min: {numbers[0]}");
+        Console.WriteLine($"Max: {numbers[4]}");
+    }
+
+    static void MarksAnalysis()
+    {
+        int[] marks = new int[10];
+        int total = 0;
+        
+        Console.WriteLine("Enter 10 marks:");
+        for (int i = 0; i < 10; i++)
+        {
+            marks[i] = Convert.ToInt32(Console.ReadLine());
+            total += marks[i];
+        }
+        
+        Array.Sort(marks);
+        
+        Console.WriteLine($"Total: {total}");
+        Console.WriteLine($"Average: {(double)total / 10}");
+        Console.WriteLine($"Minimum: {marks[0]}");
+        Console.WriteLine($"Maximum: {marks[9]}");
+        
+        Console.WriteLine("Ascending order:");
+        foreach (int mark in marks)
+            Console.Write(mark + " ");
+        
+        Console.WriteLine("\nDescending order:");
+        for (int i = 9; i >= 0; i--)
+            Console.Write(marks[i] + " ");
+    }
+
+    static void CopyArray()
+    {
+        int[] source = new int[5];
+        int[] destination = new int[5];
+        
+        Console.WriteLine("Enter 5 integers for source array:");
+        for (int i = 0; i < 5; i++)
+            source[i] = Convert.ToInt32(Console.ReadLine());
+        
+        for (int i = 0; i < 5; i++)
+            destination[i] = source[i];
+        
+        Console.WriteLine("Copied array:");
+        foreach (int num in destination)
+            Console.Write(num + " ");
+    }
+}
