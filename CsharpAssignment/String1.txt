@@ -1,0 +1,11 @@
+using System;
+
+class String1
+{
+    static void Main()
+    {
+        Console.Write("Enter a word: ");
+        string word = Console.ReadLine();
+        Console.WriteLine($"Length of the word: {word.Length}");
+    }
+}
