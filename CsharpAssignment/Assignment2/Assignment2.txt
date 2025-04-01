@@ -1,17 +1,15 @@
 using System;
 
-namespace Assignment2;
 class Program
 {
     static void Main()
     {
         while (true)
         {
-            Console.WriteLine("\n=== Assignment Menu ===");
             Console.WriteLine("1. Swap Two Numbers");
             Console.WriteLine("2. Display Number Four Times");
             Console.WriteLine("3. Display Day Name");
-            Console.WriteLine("4. Array Operations (Average, Min, Max)");
+            Console.WriteLine("4. Array Operations");
             Console.WriteLine("5. Marks Analysis");
             Console.WriteLine("6. Copy Array");
             Console.WriteLine("0. Exit");
@@ -41,9 +39,6 @@ class Program
                     break;
                 case "0":
                     return;
-                default:
-                    Console.WriteLine("Invalid choice! Please try again.");
-                    break;
             }
         }
     }
