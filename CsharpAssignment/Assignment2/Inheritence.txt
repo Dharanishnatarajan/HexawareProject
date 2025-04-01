@@ -1,0 +1,73 @@
+
+using System;
+
+class Employee
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public DateTime Dob { get; set; }
+    public double Salary { get; set; }
+
+    public Employee(int id, string name, DateTime dob, double salary)
+    {
+        Id = id;
+        Name = name;
+        Dob = dob;
+        Salary = salary;
+    }
+
+    public virtual void ComputeSalary()
+    {
+        Console.WriteLine($"Employee {Name} has a salary of {Salary}");
+    }
+}
+
+class Manager : Employee
+{
+    public double OnsiteAllowance { get; set; }
+    public double Bonus { get; set; }
+
+    public Manager(int id, string name, DateTime dob, double salary, double onsiteAllowance, double bonus)
+        : base(id, name, dob, salary)
+    {
+        OnsiteAllowance = onsiteAllowance;
+        Bonus = bonus;
+    }
+
+    public override void ComputeSalary()
+    {
+        double totalSalary = Salary + OnsiteAllowance + Bonus;
+        Console.WriteLine($"Manager {Name} has a total salary of {totalSalary}");
+    }
+}
+
+
+class FunctionCounter
+{
+    private static int count = 0;
+
+    public static void CountFunction()
+    {
+        count++;
+        Console.WriteLine($"Function called {count} times");
+    }
+}
+
+
+class Program3
+{
+    static void Main()
+    {
+        // Assignment 1
+        Employee emp = new Employee(1, "John", new DateTime(1990, 5, 12), 50000);
+        emp.ComputeSalary();
+
+        Manager mgr = new Manager(2, "Alice", new DateTime(1985, 8, 24), 80000, 10000, 15000);
+        mgr.ComputeSalary();
+
+        // Assignment 2
+        FunctionCounter.CountFunction();
+        FunctionCounter.CountFunction();
+        FunctionCounter.CountFunction();
+    }
+}

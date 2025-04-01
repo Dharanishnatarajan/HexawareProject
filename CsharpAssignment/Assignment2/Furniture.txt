@@ -1,0 +1,58 @@
+using System;
+
+abstract class Furniture
+{
+    public string Material { get; set; }
+    public double Price { get; set; }
+
+    public Furniture(string material, double price)
+    {
+        Material = material;
+        Price = price;
+    }
+
+    public abstract void DisplayDetails();
+}
+
+class Chair : Furniture
+{
+    public int NumberOfLegs { get; set; }
+
+    public Chair(string material, double price, int legs) : base(material, price)
+    {
+        NumberOfLegs = legs;
+    }
+
+    public override void DisplayDetails()
+    {
+        Console.WriteLine($"Chair -> Material: {Material}, Price: {Price}, Legs: {NumberOfLegs}");
+    }
+}
+
+
+class Bookshelf : Furniture
+{
+    public int NumberOfShelves { get; set; }
+
+    public Bookshelf(string material, double price, int shelves) : base(material, price)
+    {
+        NumberOfShelves = shelves;
+    }
+
+    public override void DisplayDetails()
+    {
+        Console.WriteLine($"Bookshelf -> Material: {Material}, Price: {Price}, Shelves: {NumberOfShelves}");
+    }
+}
+
+class Program5
+{
+    static void Main()
+    {
+        Furniture chair = new Chair("Wood", 2500, 4);
+        chair.DisplayDetails();
+
+        Furniture bookshelf = new Bookshelf("Metal", 4500, 5);
+        bookshelf.DisplayDetails();
+    }
+}
