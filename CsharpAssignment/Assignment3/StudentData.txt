@@ -1,0 +1,71 @@
+using System;
+
+class Student
+{
+    public int RollNo { get; set; }
+    public string Name { get; set; }
+    public string Class { get; set; }
+    public string Semester { get; set; }
+    public string Branch { get; set; }
+    private int[] Marks { get; set; }
+
+    public Student(int rollNo, string name, string studentClass, string semester, string branch)
+    {
+        RollNo = rollNo;
+        Name = name;
+        Class = studentClass;
+        Semester = semester;
+        Branch = branch;
+        Marks = new int[5];
+    }
+
+    public void GetMarks()
+    {
+        Console.WriteLine("Enter marks for 5 subjects:");
+        for (int i = 0; i < 5; i++)
+        {
+            Marks[i] = int.Parse(Console.ReadLine());
+        }
+    }
+
+    public void DisplayResult()
+    {
+        double average = 0;
+        foreach (var mark in Marks)
+        {
+            if (mark < 35)
+            {
+                Console.WriteLine("Result: Failed in One or more subjects below 35");
+                return;
+            }
+            average += mark;
+        }
+
+        average /= 5;
+
+        if (average < 50)
+        {
+            Console.WriteLine("Result: Failed Average < 50");
+        }
+        else
+        {
+            Console.WriteLine("Result: Passed");
+        }
+    }
+
+    public void DisplayData()
+    {
+        Console.WriteLine($"RollNo: {RollNo}, Name: {Name}, Class: {Class}, Semester: {Semester}, Branch: {Branch}");
+        DisplayResult();
+    }
+}
+
+class Inheritence
+{
+    static void Main()
+    {
+        Student student = new Student(1, "Dharanish", "B.Tech", "Semester 1", "CSE");
+        student.GetMarks();
+        student.DisplayData();
+    }
+}

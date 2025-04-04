@@ -1,0 +1,46 @@
+using System;
+
+class InsufficientFundsException : Exception
+{
+    public InsufficientFundsException(string message) : base(message) { }
+}
+
+class BankAccount
+{
+    public double Balance;
+
+    public BankAccount(double initialBalance)
+    {
+        Balance = initialBalance;
+    }
+
+    public void TransferAmount(double amount)
+    {
+        try
+        {
+            if (amount > Balance)
+            {
+                throw new InsufficientFundsException("Insufficient funds to complete the transfer.");
+            }
+            else
+            {
+                Balance -= amount;
+                Console.WriteLine($"Transfer successful. New balance: {Balance}");
+            }
+        }
+        catch (InsufficientFundsException ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+}
+
+class User
+{
+    static void Main()
+    {
+        BankAccount account = new BankAccount(1000);
+        account.TransferFunds(1500);  
+        account.TransferFunds(500);   
+    }
+}

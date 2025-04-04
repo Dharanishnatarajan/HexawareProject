@@ -1,0 +1,61 @@
+using System;
+
+public interface IStudent
+{
+    int StudentId { get; set; }
+    string Name { get; set; }
+    double Fees { get; set; }
+    void ShowDetails();
+}
+
+class DayScholar : IStudent
+{
+    public int StudentId { get; set; }
+    public string Name { get; set; }
+    public double Fees { get; set; }
+
+    public DayScholar(int studentId, string name, double fees)
+    {
+        StudentId = studentId;
+        Name = name;
+        Fees = fees;
+    }
+
+    public void ShowDetails()
+    {
+        Console.WriteLine($"DayScholar ID: {StudentId}, Name: {Name}, Fees: {Fees}");
+    }
+}
+
+class Resident : IStudent
+{
+    public int StudentId { get; set; }
+    public string Name { get; set; }
+    public double Fees { get; set; }
+    public double AccommodationFees { get; set; }
+
+    public Resident(int studentId, string name, double fees, double accommodationFees)
+    {
+        StudentId = studentId;
+        Name = name;
+        Fees = fees;
+        AccommodationFees = accommodationFees;
+    }
+
+    public void ShowDetails()
+    {
+        Console.WriteLine($"Resident ID: {StudentId}, Name: {Name}, Fees: {Fees}, Accommodation Fees: {AccommodationFees}");
+    }
+}
+
+class Interface
+{
+    static void Main()
+    {
+        IStudent dayScholar = new DayScholar(1, "Dharanish", 2000);
+        dayScholar.ShowDetails();
+
+        IStudent resident = new Resident(2, "Sanjay", 2000, 1000);
+        resident.ShowDetails();
+    }
+}
