@@ -1,0 +1,14 @@
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.AssemblyInfoInputs.cache
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.AssemblyInfo.cs
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.csproj.CoreCompileInputs.cache
+D:\VisualStudio\AssignmentTask\bin\Debug\net8.0\AssignmentTask.exe
+D:\VisualStudio\AssignmentTask\bin\Debug\net8.0\AssignmentTask.deps.json
+D:\VisualStudio\AssignmentTask\bin\Debug\net8.0\AssignmentTask.runtimeconfig.json
+D:\VisualStudio\AssignmentTask\bin\Debug\net8.0\AssignmentTask.dll
+D:\VisualStudio\AssignmentTask\bin\Debug\net8.0\AssignmentTask.pdb
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.dll
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\refint\AssignmentTask.dll
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.pdb
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\AssignmentTask.genruntimeconfig.cache
+D:\VisualStudio\AssignmentTask\obj\Debug\net8.0\ref\AssignmentTask.dll
