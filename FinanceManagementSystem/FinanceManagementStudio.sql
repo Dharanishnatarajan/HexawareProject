@@ -1,76 +1,61 @@
--- Create Database
-CREATE DATABASE FinanceManagement;
-GO
+-- create the database 
+create database financemanagement;
+go
 
--- Use the Database
-USE FinanceManagement;
-GO
+use financemanagement;
+go
 
--- Users Table
-CREATE TABLE Users (
-    user_id INT PRIMARY KEY IDENTITY(1,1),
-    username NVARCHAR(50) NOT NULL UNIQUE,
-    password NVARCHAR(255) NOT NULL,
-    email NVARCHAR(100) NOT NULL UNIQUE
+create table users (
+    userid int identity(1,1) primary key,
+    username nvarchar(100) not null,
+    email nvarchar(255) not null unique,
+    password nvarchar(255) not null,
+    datecreated datetime default getdate()
 );
 
--- ExpenseCategories Table
-CREATE TABLE ExpenseCategories (
-    category_id INT PRIMARY KEY IDENTITY(1,1),
-    category_name NVARCHAR(50) NOT NULL UNIQUE
+create table expensecategories (
+    categoryid int identity(1,1) primary key,
+    categoryname nvarchar(100) not null unique,
+    description nvarchar(255) null
 );
 
--- Expenses Table
-CREATE TABLE Expenses (
-    expense_id INT PRIMARY KEY IDENTITY(1,1),
-    user_id INT FOREIGN KEY REFERENCES Users(user_id) ON DELETE CASCADE,
-    category_id INT FOREIGN KEY REFERENCES ExpenseCategories(category_id) ON DELETE CASCADE,
-    amount DECIMAL(10,2) NOT NULL,
-    expense_date DATE NOT NULL,
-    description NVARCHAR(255)
+create table expenses (
+    expenseid int identity(1,1) primary key,
+    userid int not null,
+    categoryid int not null,
+    amount decimal(10,2) not null check (amount > 0),
+    description nvarchar(255) null,
+    expensedate datetime default getdate(),
+    foreign key (userid) references users(userid),
+    foreign key (categoryid) references expensecategories(categoryid)
 );
 
--- Insert Data into Users
-INSERT INTO Users (username, password, email)
-VALUES 
-('kalki', 'kalki@123', 'kalki@gmail.com'),
-('manoj', 'manoj@456', 'manoj@gmail.com'),
-('bharathi', 'bharathi@789', 'bharathi@gmail.com'),
-('dharanish', 'dharanish@111', 'dharanish@gmail.com'),
-('balaji', 'balaji@222', 'balaji@gmail.com'),
-('sanjay', 'sanjay@333', 'sanjay@gmail.com'),
-('haini', 'haini@444', 'haini@gmail.com'),
-('aarthi', 'aarthi@555', 'aarthi@gmail.com'),
-('dhanushkumar', 'dhanush@666', 'dhanushkumar@gmail.com'),
-('abirami', 'abirami@777', 'abirami@gmail.com');
+insert into users (username, email, password) 
+values 
+    ('sanjay', 'sanjay432@gmail.com', '12345'),
+    ('dhanush', 'dhanush3343@gmail.com', '34534'),
+    ('kalki', 'kalki232@gmail.com', '23123');
 
--- Insert Data into ExpenseCategories
-INSERT INTO ExpenseCategories (category_name) VALUES 
-('Food'),
-('Travel'),
-('Shopping'),
-('Rent'),
-('Utilities'),
-('Education'),
-('Healthcare'),
-('Entertainment'),
-('Groceries'),
-('Miscellaneous');
+insert into expensecategories (categoryname, description) 
+values 
+    ('food', 'all food-related expenses'),
+    ('transport', 'transportation costs'),
+    ('shopping', 'retail shopping expenses'),
+    ('utilities', 'bills and utilities'),
+    ('entertainment', 'avenger endgame movie');
 
--- Insert Data into Expenses
-INSERT INTO Expenses (user_id, category_id, amount, expense_date, description) VALUES 
-(1, 1, 300.00, '2025-03-01', 'Dinner at a restaurant'),
-(2, 2, 1500.00, '2025-03-03', 'Flight ticket to Delhi'),
-(3, 3, 4500.00, '2025-03-05', 'Shopping at the mall'),
-(4, 4, 12000.00, '2025-03-07', 'Monthly house rent'),
-(5, 5, 900.00, '2025-03-09', 'Electricity bill payment'),
-(6, 6, 3500.00, '2025-03-11', 'College tuition fee'),
-(7, 7, 1200.00, '2025-03-13', 'Doctor consultation fee'),
-(8, 8, 800.00, '2025-03-15', 'Movie tickets'),
-(9, 9, 1500.00, '2025-03-17', 'Weekly groceries shopping'),
-(10, 10, 450.00, '2025-03-19', 'Miscellaneous expenses');
+insert into expenses (userid, categoryid, amount, description, expensedate) 
+values 
+    (1, 1, 500.00, 'lunch at annapoorana', getdate()),
+    (2, 2, 150.00, 'cab fare', getdate()),
+    (1, 3, 1200.00, 'new clothes', getdate()),
+    (3, 4, 3500.00, 'monthly electricity bill', getdate());
 
+select table_name 
+from information_schema.tables 
+where table_type = 'base table';
 
-SELECT * FROM Users;
-SELECT * FROM ExpenseCategories;
-SELECT * FROM Expenses;
+-- view all data
+select * from users;
+select * from expensecategories;
+select * from expenses;
