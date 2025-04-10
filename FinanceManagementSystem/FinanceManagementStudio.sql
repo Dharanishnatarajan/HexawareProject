@@ -7,24 +7,22 @@ go
 
 create table users (
     userid int identity(1,1) primary key,
-    username nvarchar(100) not null,
-    email nvarchar(255) not null unique,
-    password nvarchar(255) not null,
-    datecreated datetime default getdate()
+    username nvarchar(60),
+    email nvarchar(100),
+    password nvarchar(100),
 );
 
 create table expensecategories (
     categoryid int identity(1,1) primary key,
-    categoryname nvarchar(100) not null unique,
-    description nvarchar(255) null
+    categoryname nvarchar(100),
 );
 
 create table expenses (
     expenseid int identity(1,1) primary key,
-    userid int not null,
-    categoryid int not null,
-    amount decimal(10,2) not null check (amount > 0),
-    description nvarchar(255) null,
+    userid int ,
+    categoryid int ,
+    amount decimal(10,2),
+    description nvarchar(255) ,
     expensedate datetime default getdate(),
     foreign key (userid) references users(userid),
     foreign key (categoryid) references expensecategories(categoryid)
@@ -36,13 +34,13 @@ values
     ('dhanush', 'dhanush3343@gmail.com', '34534'),
     ('kalki', 'kalki232@gmail.com', '23123');
 
-insert into expensecategories (categoryname, description) 
+insert into expensecategories (categoryname) 
 values 
-    ('food', 'all food-related expenses'),
-    ('transport', 'transportation costs'),
-    ('shopping', 'retail shopping expenses'),
-    ('utilities', 'bills and utilities'),
-    ('entertainment', 'avenger endgame movie');
+    ('food'),
+    ('transport'),
+    ('shopping'),
+    ('utilities'),
+    ('entertainment');
 
 insert into expenses (userid, categoryid, amount, description, expensedate) 
 values 
@@ -59,3 +57,5 @@ where table_type = 'base table';
 select * from users;
 select * from expensecategories;
 select * from expenses;
+
+
