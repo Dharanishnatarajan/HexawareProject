@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Create Expenses";
+}
+
+@model Application.Models.Expense
+
+<div class="text-center">
+    <h1 class="display-4">Create or edit an Expenses</h1>
+</div>
+
+<form asp-action="CreateExpenseForm" asp-controller="Home" method="post">
+  
+    <label class="mt-4">Value</label>
+    <input class="form-control" type="number" asp-for="value" step="0.01" placeholder="Enter the Amount" />
+
+    <label class="mt-4">Category</label>
+    <select class="form-control" asp-for="Category">
+        <option value="">-- Select Category --</option>
+        <option value="Food">Food</option>
+        <option value="Lifestyle">Lifestyle</option>
+        <option value="Travel">Travel</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label class="mt-4">Description</label>
+    <input class="form-control" type="text" asp-for="Description" placeholder="Enter the Description" />
+
+    <button class="btn btn-primary mt-4" type="submit">Submit</button>
+</form>

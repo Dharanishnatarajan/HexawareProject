@@ -1,0 +1,42 @@
+﻿@model List<Application.Models.Expense>
+@{
+    ViewData["Title"] = "Expenses";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Expenses</h1>
+
+    <h2 class="text-success">Total Amount Spent: ₹@ViewBag.TotalAmount</h2>
+
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Value</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int serialNo = 1;
+                foreach (var expense in Model)
+                {
+                    <tr>
+                        <td>@serialNo</td>
+                        <td>₹@expense.value</td>
+                        <td>@expense.Description</td>
+                        <td>@expense.Category</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@expense.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@expense.Id" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?');">Delete</a>
+                        </td>
+                    </tr>
+                    serialNo++;
+                }
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,27 @@
+﻿@model Application.Models.Expense
+@{
+    ViewData["Title"] = "Edit Expense";
+}
+
+<h1>Edit Expense</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label class="mt-4">Value</label>
+    <input class="form-control" asp-for="value" />
+
+    <label class="mt-4">Description</label>
+    <input class="form-control" asp-for="Description" />
+
+    <label class="mt-4">Category</label>
+    <select class="form-control" asp-for="Category">
+        <option value="">-- Select Category --</option>
+        <option value="Food">Food</option>
+        <option value="Lifestyle">Lifestyle</option>
+        <option value="Travel">Travel</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <button class="btn btn-success mt-4" type="submit">Update</button>
+</form>
