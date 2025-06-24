@@ -1,0 +1,928 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VisualStudio\\HotPot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\20250624104418_softdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\20250624104418_softdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\data\\hotpotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\data\\hotpotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|d:\\visualstudio\\hotpot\\hotpottest\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|solutionrelative:hotpottest\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|d:\\visualstudio\\hotpot\\hotpottest\\hotpottest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|solutionrelative:hotpottest\\hotpottest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|d:\\visualstudio\\hotpot\\hotpottest\\cartservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|solutionrelative:hotpottest\\cartservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|d:\\visualstudio\\hotpot\\hotpottest\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|solutionrelative:hotpottest\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|d:\\visualstudio\\hotpot\\hotpottest\\menuservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|solutionrelative:hotpottest\\menuservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|d:\\visualstudio\\hotpot\\hotpottest\\restaurantservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89FF2932-17F8-4094-A355-0094AE012CF3}|HotpotTest\\HotpotTest.csproj|solutionrelative:hotpottest\\restaurantservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\interface\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\interface\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\data\\seedadmins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\data\\seedadmins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\interface\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\interface\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\dtos\\restaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\dtos\\restaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\20250624094914_validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\20250624094914_validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624144530_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotPot\\Migrations\\20250624144530_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\hotpot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\hotpot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\hotpot.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\hotpot.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\dtos\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\dtos\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\interface\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\interface\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\20250619123450_addstatustoorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\20250619123450_addstatustoorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\20250624101534_validations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\20250624101534_validations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\menucategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\menucategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\20250617122720_create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\20250617122720_create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\20250619104548_addcartandcartitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\20250619104548_addcartandcartitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\migrations\\hotpotdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\migrations\\hotpotdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|d:\\visualstudio\\hotpot\\hotpot\\dtos\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA3F0A9C-ED6E-4A44-A745-EB6082652E22}|HotPot\\HotPot.csproj|solutionrelative:hotpot\\dtos\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\VisualStudio\\HotPot\\HotPot\\Models\\LoginModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotPot\\Models\\LoginModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HotPotDbContext.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Data\\HotPotDbContext.cs",
+              "RelativeDocumentMoniker": "HotPot\\Data\\HotPotDbContext.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Data\\HotPotDbContext.cs",
+              "RelativeToolTip": "HotPot\\Data\\HotPotDbContext.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:04:38.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250624104418_SoftDelete.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624104418_SoftDelete.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250624104418_SoftDelete.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624104418_SoftDelete.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250624104418_SoftDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:44:19.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "HotPot\\MappingProfile.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\MappingProfile.cs",
+              "RelativeToolTip": "HotPot\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T09:06:51.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RestaurantServiceTest.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotpotTest\\RestaurantServiceTest.cs",
+              "RelativeDocumentMoniker": "HotpotTest\\RestaurantServiceTest.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotpotTest\\RestaurantServiceTest.cs",
+              "RelativeToolTip": "HotpotTest\\RestaurantServiceTest.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAiwGgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T08:44:53.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Services\\OrderService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\OrderService.cs",
+              "RelativeToolTip": "HotPot\\Services\\OrderService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwHAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T18:12:10.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthServiceTest.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotpotTest\\AuthServiceTest.cs",
+              "RelativeDocumentMoniker": "HotpotTest\\AuthServiceTest.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotpotTest\\AuthServiceTest.cs",
+              "RelativeToolTip": "HotpotTest\\AuthServiceTest.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBoAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T08:44:14.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RestaurantService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\RestaurantService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Services\\RestaurantService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\RestaurantService.cs",
+              "RelativeToolTip": "HotPot\\Services\\RestaurantService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAiwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T08:41:56.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HotpotTest",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotpotTest\\HotpotTest.csproj",
+              "RelativeDocumentMoniker": "HotpotTest\\HotpotTest.csproj",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotpotTest\\HotpotTest.csproj",
+              "RelativeToolTip": "HotpotTest\\HotpotTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-23T08:11:36.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartServiceTest.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotpotTest\\CartServiceTest.cs",
+              "RelativeDocumentMoniker": "HotpotTest\\CartServiceTest.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotpotTest\\CartServiceTest.cs",
+              "RelativeToolTip": "HotpotTest\\CartServiceTest.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAvwGYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T08:44:34.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderServiceTest.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotpotTest\\OrderServiceTest.cs",
+              "RelativeDocumentMoniker": "HotpotTest\\OrderServiceTest.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotpotTest\\OrderServiceTest.cs",
+              "RelativeToolTip": "HotpotTest\\OrderServiceTest.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAWwIQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T08:45:10.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuServiceTest.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotpotTest\\MenuServiceTest.cs",
+              "RelativeDocumentMoniker": "HotpotTest\\MenuServiceTest.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotpotTest\\MenuServiceTest.cs",
+              "RelativeToolTip": "HotpotTest\\MenuServiceTest.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAmwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T08:45:31.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\Restaurant.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\Restaurant.cs",
+              "RelativeToolTip": "HotPot\\Models\\Restaurant.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA7wBcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:10:27.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Services\\MenuService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\MenuService.cs",
+              "RelativeToolTip": "HotPot\\Services\\MenuService.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAcwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T16:29:25.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Services\\CartService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\CartService.cs",
+              "RelativeToolTip": "HotPot\\Services\\CartService.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:41:07.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Services\\AuthService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Services\\AuthService.cs",
+              "RelativeToolTip": "HotPot\\Services\\AuthService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T11:43:31.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IMenuService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IMenuService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Interface\\IMenuService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IMenuService.cs",
+              "RelativeToolTip": "HotPot\\Interface\\IMenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:04:57.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "HotPot\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "HotPot\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T08:16:18.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IOrderService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Interface\\IOrderService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IOrderService.cs",
+              "RelativeToolTip": "HotPot\\Interface\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:04:56.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "HotPot\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "HotPot\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T07:53:48.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "HotPot\\DTOs\\UserDto.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "HotPot\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:05:30.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "HotPot\\Controllers\\MenuController.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "HotPot\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAawHIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T08:00:15.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "HotPot\\Controllers\\RestaurantController.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "HotPot\\Controllers\\RestaurantController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T08:16:24.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthDTO.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\AuthDTO.cs",
+              "RelativeDocumentMoniker": "HotPot\\DTOs\\AuthDTO.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\AuthDTO.cs",
+              "RelativeToolTip": "HotPot\\DTOs\\AuthDTO.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA/wBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:09:57.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "HotPot\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Controllers\\CartController.cs",
+              "RelativeToolTip": "HotPot\\Controllers\\CartController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T08:16:04.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\User.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\User.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\User.cs",
+              "RelativeToolTip": "HotPot\\Models\\User.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T18:35:17.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IAuthService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Interface\\IAuthService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IAuthService.cs",
+              "RelativeToolTip": "HotPot\\Interface\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:05:08.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\ICartService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Interface\\ICartService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\ICartService.cs",
+              "RelativeToolTip": "HotPot\\Interface\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:05:07.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Program.cs",
+              "RelativeDocumentMoniker": "HotPot\\Program.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Program.cs",
+              "RelativeToolTip": "HotPot\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:06:52.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SeedAdmins.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Data\\SeedAdmins.cs",
+              "RelativeDocumentMoniker": "HotPot\\Data\\SeedAdmins.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Data\\SeedAdmins.cs",
+              "RelativeToolTip": "HotPot\\Data\\SeedAdmins.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:01:59.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RestaurantDTO.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\RestaurantDTO.cs",
+              "RelativeDocumentMoniker": "HotPot\\DTOs\\RestaurantDTO.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\RestaurantDTO.cs",
+              "RelativeToolTip": "HotPot\\DTOs\\RestaurantDTO.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:10:07.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\MenuItem.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\MenuItem.cs",
+              "RelativeToolTip": "HotPot\\Models\\MenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:15.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250624094914_Validation.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624094914_Validation.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250624094914_Validation.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624094914_Validation.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250624094914_Validation.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwC8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T09:49:16.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250624144530_New.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624144530_New.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250624144530_New.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624144530_New.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250624144530_New.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:45:31.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\OrderItem.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\OrderItem.cs",
+              "RelativeToolTip": "HotPot\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T18:14:29.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\CartItem.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\CartItem.cs",
+              "RelativeToolTip": "HotPot\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:22.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "HotPot.http",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\HotPot.http",
+              "RelativeDocumentMoniker": "HotPot\\HotPot.http",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\HotPot.http",
+              "RelativeToolTip": "HotPot\\HotPot.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-23T09:06:20.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\appsettings.json",
+              "RelativeDocumentMoniker": "HotPot\\appsettings.json",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\appsettings.json",
+              "RelativeToolTip": "HotPot\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T08:56:46.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "HotPot\\appsettings.Development.json",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\appsettings.Development.json",
+              "RelativeToolTip": "HotPot\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T11:35:50.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HotPot",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\HotPot.csproj",
+              "RelativeDocumentMoniker": "HotPot\\HotPot.csproj",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\HotPot.csproj",
+              "RelativeToolTip": "HotPot\\HotPot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-24T11:35:57.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MenuDTO.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\MenuDTO.cs",
+              "RelativeDocumentMoniker": "HotPot\\DTOs\\MenuDTO.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\MenuDTO.cs",
+              "RelativeToolTip": "HotPot\\DTOs\\MenuDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T16:28:20.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "HotPot\\DTOs\\OrderDTO.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\OrderDTO.cs",
+              "RelativeToolTip": "HotPot\\DTOs\\OrderDTO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:09:38.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250619123450_AddStatusToOrders.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250619123450_AddStatusToOrders.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250619123450_AddStatusToOrders.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250619123450_AddStatusToOrders.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250619123450_AddStatusToOrders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:37.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IRestaurantService.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IRestaurantService.cs",
+              "RelativeDocumentMoniker": "HotPot\\Interface\\IRestaurantService.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Interface\\IRestaurantService.cs",
+              "RelativeToolTip": "HotPot\\Interface\\IRestaurantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:05:10.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20250624101534_Validations.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624101534_Validations.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250624101534_Validations.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250624101534_Validations.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250624101534_Validations.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvysAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:15:36.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MenuCategory.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\MenuCategory.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\MenuCategory.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\MenuCategory.cs",
+              "RelativeToolTip": "HotPot\\Models\\MenuCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:20.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\Order.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\Order.cs",
+              "RelativeToolTip": "HotPot\\Models\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wBsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:10:39.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\Cart.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\Cart.cs",
+              "RelativeToolTip": "HotPot\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:23.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20250617122720_Create.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250617122720_Create.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250617122720_Create.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250617122720_Create.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250617122720_Create.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:39.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "HotPotDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\HotPotDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\HotPotDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\HotPotDbContextModelSnapshot.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\HotPotDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:46:27.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20250619104548_AddCartAndCartItems.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250619104548_AddCartAndCartItems.cs",
+              "RelativeDocumentMoniker": "HotPot\\Migrations\\20250619104548_AddCartAndCartItems.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Migrations\\20250619104548_AddCartAndCartItems.cs",
+              "RelativeToolTip": "HotPot\\Migrations\\20250619104548_AddCartAndCartItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T10:45:48.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CartDTO.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\CartDTO.cs",
+              "RelativeDocumentMoniker": "HotPot\\DTOs\\CartDTO.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\DTOs\\CartDTO.cs",
+              "RelativeToolTip": "HotPot\\DTOs\\CartDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T18:52:41.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "HotPot\\Models\\LoginModel.cs",
+              "ToolTip": "D:\\VisualStudio\\HotPot\\HotPot\\Models\\LoginModel.cs",
+              "RelativeToolTip": "HotPot\\Models\\LoginModel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:03:36.681Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
