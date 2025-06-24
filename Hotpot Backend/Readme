@@ -1,0 +1,97 @@
+🍽️ HotPot - Online Food Delivery System
+🧩 Overview
+HotPot is a powerful and scalable online food delivery application built using modern full stack technologies. It is designed to streamline the food ordering experience for customers and provide seamless restaurant management features for vendors.
+
+🛠️ Technologies Used
+Backend Language: C#
+
+Framework: ASP.NET Core Web API
+
+ORM: Entity Framework Core
+
+Database: Microsoft SQL Server
+
+Authentication: JWT (JSON Web Token)
+
+Authorization: Role-based (Admin, User, Restaurant)
+
+Design Patterns: Repository Pattern, Singleton, Factory, Dependency Injection
+
+Mapping: AutoMapper
+
+Testing Framework: NUnit, Moq
+
+API Architecture: RESTful APIs
+
+🧱 Architecture & Design
+Layered Architecture for maintainability and separation of concerns
+
+SOLID Principles followed throughout the application
+
+Service Layer Abstraction through interfaces for better testability
+
+Clean DTOs for request/response shaping
+
+Global Filters for soft deletes and cleaner querying
+
+Modular Folder Structure:
+
+Controllers/
+
+Services/
+
+Interfaces/
+
+DTOs/
+
+Models/
+
+Mapping/
+
+Data/
+
+✅ Features
+User Registration & Login
+
+Restaurant Management
+
+Menu Category & Menu Item Management
+
+Add to Cart / Remove from Cart
+
+Place Order / View Orders
+
+Soft Delete & Authorization Logic
+
+Comprehensive Unit Tests
+
+JWT-secured API with Role-specific access
+
+🧪 Testing
+Unit tests are written using NUnit and EF Core InMemory provider to ensure business logic integrity. Each service class is independently tested for methods like:
+
+Placing Orders
+
+Soft Deleting Orders
+
+Validating Access Rights
+
+Restaurant and Menu Management
+
+🔗 Future Enhancements
+Admin Dashboard with Analytics
+
+Payment Gateway Integration
+
+Notification Services (SMS/Email)
+
+React or Angular Frontend Integration
+
+Docker-based Deployment & Azure Hosting
+
+👨‍💻 Developer Information
+Developed by: Dharanish N
+Expertise: C#, .NET, SQL Server, Web API, MVC, Design Patterns, Full Stack Development
+GitHub: github.com/Dharanishnatarajan
+LinkedIn: linkedin.com/in/dharanishn
+Mail: dharanish2003@gmail.com
