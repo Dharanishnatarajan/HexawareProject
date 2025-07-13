@@ -1,0 +1,151 @@
+/* Admin Navbar */
+.admin-navbar {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand Section */
+.admin-brand-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.admin-brand-section:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.admin-brand-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.admin-brand-name {
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-brand-tagline {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Navigation Buttons */
+.admin-nav-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.admin-nav-btn {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.admin-nav-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.admin-nav-btn:hover::before {
+  left: 100%;
+}
+
+.admin-btn-dashboard {
+  background: rgba(52, 152, 219, 0.2);
+  color: white;
+}
+
+.admin-btn-dashboard:hover {
+  background: rgba(52, 152, 219, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.admin-btn-users {
+  background: rgba(155, 89, 182, 0.2);
+  color: white;
+}
+
+.admin-btn-users:hover {
+  background: rgba(155, 89, 182, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3);
+}
+
+.admin-btn-restaurants {
+  background: rgba(46, 204, 113, 0.2);
+  color: white;
+}
+
+.admin-btn-restaurants:hover {
+  background: rgba(46, 204, 113, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.admin-btn-logout {
+  background: rgba(231, 76, 60, 0.2);
+  color: white;
+}
+
+.admin-btn-logout:hover {
+  background: rgba(231, 76, 60, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+
+
+/* Animation */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.admin-navbar {
+  animation: slideInDown 0.5s ease-out;
+}

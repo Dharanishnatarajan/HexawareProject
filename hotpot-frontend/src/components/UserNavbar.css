@@ -1,0 +1,279 @@
+/* User Navbar - Modern Design */
+.user-navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideInDown 0.6s ease-out;
+}
+
+/* Brand Section */
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.brand-section:hover::before {
+  left: 100%;
+}
+
+.brand-section:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.brand-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-icon::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.brand-section:hover .brand-icon::before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.brand-icon-symbol {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.brand-name {
+  color: white;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.5px;
+}
+
+.brand-tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-btn {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 0.875rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.nav-btn:hover::before {
+  left: 100%;
+}
+
+.nav-btn-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover .nav-btn-icon {
+  transform: scale(1.1);
+}
+
+.nav-btn-home {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.3), rgba(41, 128, 185, 0.3));
+  border-color: rgba(52, 152, 219, 0.4);
+}
+
+.nav-btn-home:hover {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.5), rgba(41, 128, 185, 0.5));
+  border-color: rgba(52, 152, 219, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+  color: white;
+}
+
+.nav-btn-orders {
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.3), rgba(142, 68, 173, 0.3));
+  border-color: rgba(155, 89, 182, 0.4);
+}
+
+.nav-btn-orders:hover {
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.5), rgba(142, 68, 173, 0.5));
+  border-color: rgba(155, 89, 182, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(155, 89, 182, 0.4);
+  color: white;
+}
+
+.nav-btn-cart {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.3), rgba(39, 174, 96, 0.3));
+  border-color: rgba(46, 204, 113, 0.4);
+  position: relative;
+}
+
+.nav-btn-cart:hover {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.5), rgba(39, 174, 96, 0.5));
+  border-color: rgba(46, 204, 113, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(46, 204, 113, 0.4);
+  color: white;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.4);
+  animation: cartPulse 2s infinite;
+}
+
+@keyframes cartPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.nav-btn-logout {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.3), rgba(192, 57, 43, 0.3));
+  border-color: rgba(231, 76, 60, 0.4);
+}
+
+.nav-btn-logout:hover {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.5), rgba(192, 57, 43, 0.5));
+  border-color: rgba(231, 76, 60, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+  color: white;
+}
+
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+/* Hover Effects */
+.nav-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .user-navbar,
+  .brand-section,
+  .nav-btn,
+  .mobile-menu-toggle {
+    animation: none;
+    transition: none;
+  }
+
+  .cart-badge {
+    animation: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .user-navbar {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  }
+}

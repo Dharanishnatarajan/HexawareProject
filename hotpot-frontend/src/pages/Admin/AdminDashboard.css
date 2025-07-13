@@ -1,0 +1,415 @@
+/* Admin Dashboard Container */
+.admin-dashboard-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.dashboard-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.dashboard-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.refresh-btn {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+  color: white;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.7;
+  transform: none;
+}
+
+/* Stats Section */
+.stats-section {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stat-total {
+  border-left-color: #6c757d;
+}
+
+.stat-restaurants {
+  border-left-color: #28a745;
+}
+
+.stat-admins {
+  border-left-color: #dc3545;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.stat-total .stat-icon {
+  background: linear-gradient(135deg, #6c757d, #495057);
+}
+
+.stat-restaurants .stat-icon {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.stat-admins .stat-icon {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.nav-pills .nav-link {
+  background: transparent;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  color: #495057;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+}
+
+.nav-pills .nav-link:hover {
+  background: #f8f9fa;
+  border-color: #dee2e6;
+  color: #495057;
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: white;
+}
+
+/* Search and Filter Section */
+.search-filter-section {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  z-index: 2;
+}
+
+.search-input {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.filter-select {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Data Table Card */
+.data-table-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+.table-header {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.table-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.table-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.table-body {
+  padding: 0;
+}
+
+/* Admin Table */
+.admin-table {
+  margin: 0;
+  border: none;
+}
+
+.admin-table thead th {
+  background: #f8f9fa;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  color: #495057;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-table tbody td {
+  padding: 2rem;
+  border-top: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* User/Restaurant Details */
+.user-id,
+.restaurant-id {
+  font-weight: 700;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.user-name,
+.restaurant-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #040507;
+}
+
+/* Common Name Style */
+.name-display {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #6c757d;
+}
+
+
+
+.user-email,
+.restaurant-location,
+.contact-number {
+  font-size: 0.95rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+}
+
+/* Role Badges */
+.role-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-admin {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+.role-user {
+  background: linear-gradient(135deg, #00ff08aa, #138496);
+  color: white;
+}
+
+.role-restaurant {
+  background-color: #1b98e0; /* Purple */
+}
+
+/* Edit Form */
+.edit-input {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.edit-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.edit-btn:hover {
+  background: #1976d2;
+  color: white;
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+  color: white;
+  transform: scale(1.1);
+}
+
+.save-btn {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.save-btn:hover {
+  background: #2e7d32;
+  color: white;
+  transform: scale(1.1);
+}
+
+.cancel-btn {
+  background: #f5f5f5;
+  color: #757575;
+}
+
+.cancel-btn:hover {
+  background: #757575;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
