@@ -1,0 +1,14 @@
+# Ignore build output
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Ignore system files
+Thumbs.db
+*.DS_Store
+
+# Ignore Rider and VS Code config (optional)
+.idea/
+.vscode/
