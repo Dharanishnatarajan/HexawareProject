@@ -26,7 +26,7 @@ const AdminNavbar = () => {
           </div>
 
           {/* Navigation Buttons */}
-          <div className="admin-nav-buttons d-none d-lg-flex">
+          <div className="admin-nav-buttons">
             <button className="admin-nav-btn admin-btn-dashboard" onClick={() => navigate("/admin/dashboard")}>
               <i className="bi bi-speedometer2 me-2"></i>
               <span>Dashboard</span>
@@ -37,7 +37,6 @@ const AdminNavbar = () => {
               <span>Logout</span>
             </button>
           </div>
-
         </div>
       </div>
     </nav>

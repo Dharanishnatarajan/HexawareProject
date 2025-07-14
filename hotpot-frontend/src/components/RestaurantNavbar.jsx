@@ -28,18 +28,15 @@ const RestaurantNavbar = () => {
           {/* Navigation Buttons */}
           <div className="nav-buttons d-flex gap-2">
             <button className="nav-btn nav-btn-primary" onClick={() => navigate("/restaurant/dashboard")}>
-              <i className="bi bi-house-door me-2"></i>
-              <span className="btn-text">Dashboard</span>
+              <i className="bi bi-house-door me-2"></i>Dashboard
             </button>
 
             <button className="nav-btn nav-btn-warning" onClick={() => navigate("/restaurant/orders")}>
-              <i className="bi bi-box-seam me-2"></i>
-              <span className="btn-text">Orders</span>
+              <i className="bi bi-box-seam me-2"></i>Orders
             </button>
 
             <button className="nav-btn nav-btn-danger" onClick={handleLogout}>
-              <i className="bi bi-box-arrow-right me-2"></i>
-              <span className="btn-text">Logout</span>
+              <i className="bi bi-box-arrow-right me-2"></i>Logout
             </button>
           </div>
         </div>

@@ -17,15 +17,15 @@ const UserNavbar = () => {
           {/* Brand Section */}
           <div className="brand-section" onClick={() => navigate("/home")}>
             <div className="brand-icon">
-            <div className="logo-icon">🍔</div>
+              <div className="logo-icon">🍔</div>
             </div>
             <div className="brand-text">
               <h4 className="brand-name mb-0">HotPot</h4>
-              <small className="brand-tagline">Food Delivery </small>
+              <small className="brand-tagline">Food Delivery</small>
             </div>
           </div>
 
-          {/* Navigation Buttons */}
+          {/* Desktop Nav Buttons */}
           <div className="nav-buttons d-none d-lg-flex">
             <button className="nav-btn nav-btn-home" onClick={() => navigate("/home")}>
               <i className="bi bi-house-door nav-btn-icon"></i>
@@ -40,6 +40,7 @@ const UserNavbar = () => {
             <button className="nav-btn nav-btn-cart" onClick={() => navigate("/cart")}>
               <i className="bi bi-cart3 nav-btn-icon"></i>
               <span>Cart</span>
+              <div className="cart-badge">3</div>
             </button>
 
             <button className="nav-btn nav-btn-logout" onClick={handleLogout}>
@@ -55,7 +56,7 @@ const UserNavbar = () => {
             data-bs-toggle="collapse"
             data-bs-target="#mobileUserNav"
           >
-            <i className="bi bi-list"></i>
+            <i className="bi bi-list fs-3 text-white"></i>
           </button>
         </div>
 
@@ -76,7 +77,7 @@ const UserNavbar = () => {
               <button className="nav-btn nav-btn-cart w-100" onClick={() => navigate("/cart")}>
                 <i className="bi bi-cart3 nav-btn-icon"></i>
                 <span>Cart</span>
-                <div className="cart-badge ms-auto">3</div>
+                <div className="cart-badge">3</div>
               </button>
 
               <button className="nav-btn nav-btn-logout w-100" onClick={handleLogout}>
