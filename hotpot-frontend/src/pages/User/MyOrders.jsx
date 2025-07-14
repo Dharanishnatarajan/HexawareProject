@@ -8,7 +8,6 @@ import "./MyOrders.css"
 const MyOrders = () => {
   const [orders, setOrders] = useState([])
   const [loading, setLoading] = useState(true)
-  const [filter, setFilter] = useState("All")
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -40,8 +39,6 @@ const MyOrders = () => {
     }
   }
 
-  const filteredOrders = filter === "All" ? orders : orders.filter((order) => order.status === filter)
-
   return (
     <>
       <UserNavbar />
@@ -59,21 +56,6 @@ const MyOrders = () => {
                   <p className="header-subtitle mb-0">Track and manage your food orders</p>
                 </div>
               </div>
-
-            </div>
-          </div>
-          
-          <div className="filter-section mb-4">
-            <div className="d-flex gap-2 flex-wrap">
-              {["All", "Pending", "Preparing", "Ready", "Delivered"].map((status) => (
-                <button
-                  key={status}
-                  className={`filter-btn ${filter === status ? "active" : ""}`}
-                  onClick={() => setFilter(status)}
-                >
-                  {status}
-                </button>
-              ))}
             </div>
           </div>
 
@@ -85,14 +67,12 @@ const MyOrders = () => {
               </div>
               <p className="mt-3 text-muted">Loading your orders...</p>
             </div>
-          ) : filteredOrders.length === 0 ? (
+          ) : orders.length === 0 ? (
             <div className="empty-orders">
               <i className="bi bi-receipt display-1 text-muted mb-3"></i>
               <h4 className="text-muted mb-2">No orders found</h4>
               <p className="text-muted">
-                {filter === "All"
-                  ? "You haven't placed any orders yet. Start exploring our menu!"
-                  : `No ${filter.toLowerCase()} orders found.`}
+                You haven't placed any orders yet. Start exploring our menu!
               </p>
               <button className="btn btn-primary" onClick={() => (window.location.href = "/home")}>
                 <i className="bi bi-arrow-left me-2"></i>
@@ -101,7 +81,7 @@ const MyOrders = () => {
             </div>
           ) : (
             <div className="orders-list">
-              {filteredOrders.map((order) => (
+              {orders.map((order) => (
                 <div key={order.id} className="order-card">
                   <div className="order-header">
                     <div className="order-info">
@@ -121,7 +101,9 @@ const MyOrders = () => {
                       </div>
                     </div>
                     <div className="order-status">
-                      <span className={`status-badge ${getStatusBadgeClass(order.status)}`}>{order.status}</span>
+                      <span className={`status-badge ${getStatusBadgeClass(order.status)}`}>
+                        {order.status}
+                      </span>
                     </div>
                   </div>
 
@@ -156,8 +138,7 @@ const MyOrders = () => {
 
                   <div className="order-footer">
                     <div className="order-actions">
-                      
-                     
+                      {/* Add action buttons if needed */}
                     </div>
                   </div>
                 </div>

@@ -149,31 +149,36 @@ const RestaurantDashboard = () => {
       <div className="dashboard-container">
         {/* Restaurant Header */}
         {restaurant && (
-          <div className="restaurant-header">
-            <div className="container">
-              <div className="restaurant-info-card">
-                <div className="restaurant-icon">
-                  <i className="bi bi-shop"></i>
-                </div>
-                <div className="restaurant-details">
-                  <h2 className="restaurant-name">{restaurant.name}</h2>
-                  <p className="restaurant-address">
-                    <i className="bi bi-geo-alt me-2"></i>
-                    {restaurant.location}
-                  </p>
-                  <p className="restaurant-contact">
-                    <i className="bi bi-telephone me-2"></i>
-                    {restaurant.contactNumber}
-                  </p>
-                </div>
-                <div className="restaurant-badge">
-                  <span className="badge-label">Restaurant ID</span>
-                  <span className="badge-value">#{restaurant.id}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+  <div className="restaurant-header">
+    <div className="container">
+      <div className="restaurant-info-card">
+        <div className="restaurant-icon">
+          <i className="bi bi-shop"></i>
+        </div>
+        <div className="restaurant-details">
+          <h2 className="restaurant-name">{restaurant.name}</h2>
+          <p className="restaurant-description">
+            <i className="bi bi-info-circle me-2"></i>
+            {restaurant.description || "No description provided."}
+          </p>
+          <p className="restaurant-address">
+            <i className="bi bi-geo-alt me-2"></i>
+            {restaurant.location}
+          </p>
+          <p className="restaurant-contact">
+            <i className="bi bi-telephone me-2"></i>
+            {restaurant.contactNumber}
+          </p>
+        </div>
+        <div className="restaurant-badge">
+          <span className="badge-label">Restaurant ID</span>
+          <span className="badge-value">#{restaurant.id}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
 
         <div className="main-content">
           <div className="container">

@@ -6,22 +6,23 @@
 
 /* Restaurant Header */
 .restaurant-header {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+
 .restaurant-info-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  animation: slideInDown 0.6s ease-out;
+  gap: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 
 .restaurant-icon {
   width: 80px;
@@ -63,6 +64,16 @@
   border-radius: 15px;
   text-align: center;
   backdrop-filter: blur(10px);
+}
+
+.restaurant-description {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
 }
 
 .badge-label {
@@ -129,10 +140,6 @@
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-.stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
 
 .stat-icon {
   width: 60px;
@@ -289,20 +296,12 @@
   color: white;
 }
 
-.btn-primary.modern-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-}
 
 .btn-secondary.modern-btn {
   background: #e2e8f0;
   color: #4a5568;
 }
 
-.btn-secondary.modern-btn:hover {
-  background: #cbd5e0;
-  transform: translateY(-1px);
-}
 
 /* Table Section */
 .table-section {
@@ -314,7 +313,6 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
 .table-header {
@@ -384,10 +382,7 @@
   transition: all 0.2s ease;
 }
 
-.modern-table tbody tr:hover {
-  background: #f8fafc;
-  transform: scale(1.01);
-}
+
 
 .item-image {
   width: 60px;
@@ -496,9 +491,7 @@
   border: 1.5px solid;
 }
 
-.action-btn:hover {
-  transform: translateY(-2px);
-}
+
 
 /* Empty State */
 .empty-state {
@@ -530,132 +523,4 @@
   margin: 0;
 }
 
-/* Animations */
-@keyframes slideInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .restaurant-info-card {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-
-  .restaurant-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
-  }
-
-  .restaurant-name {
-    font-size: 1.5rem;
-  }
-
-  .stat-card {
-    padding: 1.5rem;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
-
-  .form-body {
-    padding: 1.5rem;
-  }
-
-  .form-actions {
-    flex-direction: column;
-  }
-
-  .modern-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .table-header {
-    padding: 1.5rem;
-  }
-
-  .modern-table thead th,
-  .modern-table tbody td {
-    padding: 1rem;
-  }
-
-  .item-description {
-    max-width: 150px;
-  }
-
-  .action-buttons {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .main-content {
-    padding: 2rem 0;
-  }
-
-  .restaurant-header {
-    padding: 1.5rem 0;
-  }
-
-  .restaurant-info-card {
-    padding: 1.5rem;
-  }
-
-  .stat-card {
-    padding: 1.25rem;
-    gap: 1rem;
-  }
-
-  .stat-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.25rem;
-  }
-
-  .form-header {
-    padding: 1.5rem;
-  }
-
-  .form-header-content {
-    gap: 1rem;
-  }
-
-  .form-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.25rem;
-  }
-
-  .table-header {
-    padding: 1.25rem;
-  }
-
-  .table-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.25rem;
-  }
-}

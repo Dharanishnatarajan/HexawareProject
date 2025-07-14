@@ -220,9 +220,17 @@ const Cart = () => {
                           className="form-control delivery-input"
                           placeholder="Enter your phone number"
                           value={phoneNumber}
-                          onChange={(e) => setPhoneNumber(e.target.value)}
+                          onChange={(e) => {
+                            const val = e.target.value
+                            // Allow only numbers and limit to 10 digits
+                            if (/^[6-9][0-9]{0,9}$/.test(val) || val === "") {
+                              setPhoneNumber(val)
+                            }
+                          }}
                           required
+                          maxLength={10}
                         />
+
                       </div>
                     </div>
 

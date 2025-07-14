@@ -37,9 +37,22 @@ const CreateRestaurant = () => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
+  // ✅ 10-digit number validation (must start with 6,7,8, or 9)
+  const isValidPhoneNumber = (number) => {
+    const regex = /^[6-9]\d{9}$/;
+    return regex.test(number);
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
+
+    // Validate phone number
+    if (!isValidPhoneNumber(form.contactNumber)) {
+      toast.error("Invalid contact number. Must be a 10-digit number starting with 6, 7, 8, or 9.")
+      setLoading(false)
+      return
+    }
 
     try {
       const res = await axios.post("/restaurant", form)
@@ -129,7 +142,7 @@ const CreateRestaurant = () => {
               type="text"
               name="contactNumber"
               className="form-control custom-input"
-              placeholder="e.g. +91 9876543210"
+              placeholder="e.g. 9876543210"
               value={form.contactNumber}
               onChange={handleChange}
               required

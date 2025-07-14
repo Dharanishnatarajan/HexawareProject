@@ -85,16 +85,27 @@ const AdminDashboard = () => {
   };
 
   const handleUpdateRestaurant = async () => {
-    try {
-      await updateRestaurant(editRestaurantId, restaurantForm);
-      toast.success("Restaurant updated!");
-      setEditRestaurantId(null);
-      setRestaurantForm({ name: "", location: "", contactNumber: "" });
-      loadData();
-    } catch {
-      toast.error("Failed to update restaurant");
-    }
-  };
+  const phone = restaurantForm.contactNumber.trim();
+
+  // Phone number must be exactly 10 digits and numeric
+  const isValidPhone = /^[0-9]{10}$/.test(phone);
+
+  if (!isValidPhone) {
+    toast.error("Enter a valid 10-digit phone number");
+    return;
+  }
+
+  try {
+    await updateRestaurant(editRestaurantId, restaurantForm);
+    toast.success("Restaurant updated!");
+    setEditRestaurantId(null);
+    setRestaurantForm({ name: "", location: "", contactNumber: "" });
+    loadData();
+  } catch {
+    toast.error("Failed to update restaurant");
+  }
+};
+
 
   const handleDeleteRestaurant = async (id) => {
     if (window.confirm("Delete this restaurant?")) {

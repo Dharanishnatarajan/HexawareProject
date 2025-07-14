@@ -110,9 +110,6 @@
   margin-bottom: 1.5rem;
 }
 
-.cart-item:hover {
-  background-color: #f8f9fa;
-}
 
 .cart-item:not(:last-child) {
   border-bottom: 1px solid #e9ecef;
@@ -202,11 +199,7 @@
   transition: all 0.3s ease;
 }
 
-.quantity-btn:hover:not(:disabled) {
-  background: #4facfe;
-  color: white;
-  transform: scale(1.1);
-}
+
 
 .quantity-btn:disabled {
   opacity: 0.5;
@@ -235,11 +228,7 @@
   transition: all 0.3s ease;
 }
 
-.remove-btn:hover {
-  background: #dc3545;
-  color: white;
-  transform: scale(1.1);
-}
+
 
 /* Checkout Card */
 .checkout-card {
@@ -250,10 +239,6 @@
   position: sticky;
   top: 2rem;
   transition: box-shadow 0.3s ease;
-}
-
-.checkout-card:hover {
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
 }
 
 .checkout-header {
