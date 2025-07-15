@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react"
 import {
   getAllMenuItems,
-  getMenuByLocation,
-  getMenuByCategoryName,
   getMenuByRestaurantName,
   getAllCategories,
   getAllRestaurants,
@@ -78,36 +76,47 @@ const UserHome = () => {
   }
 
   const handleSearch = async () => {
-    try {
-      setLoading(true)
-      let data = []
+  try {
+    setLoading(true)
+    const allMenuItems = await getAllMenuItems()
+    let filtered = allMenuItems
 
-      if (menuName.trim()) {
-        const nameLower = menuName.trim().toLowerCase()
-        const allMenu = await getAllMenuItems()
-        data = allMenu.filter((item) => item.name.toLowerCase().includes(nameLower))
-      } else if (location.trim()) {
-        data = await getMenuByLocation(location.trim())
-      } else if (category) {
-        data = await getMenuByCategoryName(category)
-      } else if (restaurant) {
-        data = await getMenuByRestaurantName(restaurant)
-      } else {
-        data = await getAllMenuItems()
-      }
-
-      setMenu(data)
-    } catch {
-      toast.error("Search failed")
-      setMenu([])
-    } finally {
-      setLoading(false)
+    if (menuName.trim()) {
+      const nameLower = menuName.trim().toLowerCase()
+      filtered = filtered.filter((item) =>
+        item.name.toLowerCase().includes(nameLower)
+      )
     }
-    setLocation("")
-    setRestaurant("")
-    setCategory("")
-    setMenuName("")
+
+    if (location.trim()) {
+      const locationLower = location.trim().toLowerCase()
+      filtered = filtered.filter(
+        (item) => item.restaurant?.location.toLowerCase().includes(locationLower)
+      )
+    }
+
+    if (restaurant) {
+      filtered = filtered.filter(
+        (item) => item.restaurant?.name === restaurant
+      )
+    }
+
+    if (category) {
+      filtered = filtered.filter(
+        (item) => item.menuCategory?.name === category
+      )
+    }
+
+    setMenu(filtered)
+  } catch  {
+    toast.error("Search failed")
+    setMenu([])
+  } finally {
+    setLoading(false)
   }
+}
+
+
 
   const handleClearSearch = async () => {
     setLocation("")

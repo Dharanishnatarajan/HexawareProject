@@ -46,45 +46,10 @@ const UserNavbar = () => {
               <i className="bi bi-box-arrow-right nav-btn-icon"></i>
               <span>Logout</span>
             </button>
-          </div>
+       
 
-          {/* Mobile Menu Toggle */}
-          <button
-            className="mobile-menu-toggle d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobileUserNav"
-          >
-            <i className="bi bi-list"></i>
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="collapse" id="mobileUserNav">
-          <div className="mobile-nav-content py-3">
-            <div className="d-flex flex-column gap-3">
-              <button className="nav-btn nav-btn-home w-100" onClick={() => navigate("/home")}>
-                <i className="bi bi-house-door nav-btn-icon"></i>
-                <span>Home</span>
-              </button>
-
-              <button className="nav-btn nav-btn-orders w-100" onClick={() => navigate("/my-orders")}>
-                <i className="bi bi-receipt nav-btn-icon"></i>
-                <span>My Orders</span>
-              </button>
-
-              <button className="nav-btn nav-btn-cart w-100" onClick={() => navigate("/cart")}>
-                <i className="bi bi-cart3 nav-btn-icon"></i>
-                <span>Cart</span>
-              </button>
-
-              <button className="nav-btn nav-btn-logout w-100" onClick={handleLogout}>
-                <i className="bi bi-box-arrow-right nav-btn-icon"></i>
-                <span>Logout</span>
-              </button>
-            </div>
-          </div>
-        </div>
+        
+        </div></div>
       </div>
     </nav>
   )

@@ -9,6 +9,7 @@ const Login = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [loading, setLoading] = useState(false)
+  const [showLoginForm, setShowLoginForm] = useState(false)
   const navigate = useNavigate()
 
   const handleLogin = async (e) => {
@@ -38,65 +39,106 @@ const Login = () => {
     }
   }
 
-  return (
-    <div className="login-container">
-      <div className="login-background">
-        <div className="floating-shapes">
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div>
+  const handleGetStarted = () => {
+    setShowLoginForm(true)
+  }
+
+  const handleBackToWelcome = () => {
+    setShowLoginForm(false)
+    setUsername("")
+    setPassword("")
+  }
+
+  if (!showLoginForm) {
+    // Welcome Page
+    return (
+      <div className="login-container">
+        <div className="welcome-card">
+          <div className="welcome-header">
+            <div className="brand-logo">
+              <div className="logo-icon">🍔</div>
+              <h1 className="brand-name">HotPot</h1>
+            </div>
+            <h2 className="welcome-title">Welcome to HotPot</h2>
+            <p className="welcome-subtitle">Your favorite food delivery platform</p>
+            <p className="welcome-description">
+              Order delicious meals from top restaurants and get them delivered to your doorstep. Join thousands of food
+              lovers who trust HotPot for their daily dining needs.
+            </p>
+          </div>
+
+          <div className="welcome-features">
+            <div className="feature-item">
+              <span className="feature-icon">🏪</span>
+              <span>Multiple Restaurants</span>
+            </div>
+            <div className="feature-item">
+              <span className="feature-icon">⚡</span>
+              <span>Fast Delivery</span>
+            </div>
+            <div className="feature-item">
+              <span className="feature-icon">❤️</span>
+              <span>Quality Food</span>
+            </div>
+          </div>
+
+          <button className="get-started-btn" onClick={handleGetStarted}>
+            Get Started
+          </button>
+
+          <div className="welcome-footer">
+            <p className="register-link">
+              New to HotPot?{" "}
+              <Link to="/register" className="link-primary">
+                Create an account
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
+    )
+  }
 
+  // Login Form
+  return (
+    <div className="login-container">
       <div className="login-card">
         <div className="login-header">
+          <button className="back-btn" onClick={handleBackToWelcome}>
+            ← Back
+          </button>
           <div className="brand-logo">
             <div className="logo-icon">🍔</div>
-            <h2 className="brand-name">HotPot</h2>
+            <h1 className="brand-name">HotPot</h1>
           </div>
           <p className="login-subtitle">Welcome back! Please sign in to continue</p>
         </div>
 
         <form onSubmit={handleLogin} className="login-form">
           <div className="form-group">
-            <div className="input-wrapper">
-              <input
-                type="text"
-                className="form-control custom-input"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
-              />
-            </div>
+            <input
+              type="text"
+              className="form-input"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
           </div>
 
           <div className="form-group">
-            <div className="input-wrapper">
-              <input
-                type="password"
-                className="form-control custom-input"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
+            <input
+              type="password"
+              className="form-input"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </div>
 
-          <button type="submit" className="btn login-btn" disabled={loading}>
-            {loading ? (
-              <>
-                <span className="spinner-border spinner-border-sm me-2"></span>
-                Signing in...
-              </>
-            ) : (
-              <>
-                <i className="bi bi-box-arrow-in-right me-2"></i>
-                Sign In
-              </>
-            )}
+          <button type="submit" className="login-btn" disabled={loading}>
+            {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
 
