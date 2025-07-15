@@ -17,6 +17,8 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Routes>
+
+            
             {/* Public Routes */}
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />

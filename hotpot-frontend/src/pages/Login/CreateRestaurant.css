@@ -15,76 +15,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  background: linear-gradient( #fcb69f 100%);
   z-index: -1;
 }
 
-/* Floating Food Icons */
-.floating-food-icons {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.food-icon {
-  position: absolute;
-  font-size: 2.5rem;
-  animation: floatFood 10s ease-in-out infinite;
-  opacity: 0.6;
-}
-
-.icon-1 {
-  top: 10%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.icon-2 {
-  top: 20%;
-  right: 15%;
-  animation-delay: 2s;
-}
-
-.icon-3 {
-  top: 60%;
-  left: 5%;
-  animation-delay: 4s;
-}
-
-.icon-4 {
-  bottom: 30%;
-  right: 20%;
-  animation-delay: 6s;
-}
-
-.icon-5 {
-  bottom: 10%;
-  left: 20%;
-  animation-delay: 8s;
-}
-
-.icon-6 {
-  top: 50%;
-  right: 5%;
-  animation-delay: 1s;
-}
-
-@keyframes floatFood {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-30px) rotate(90deg);
-  }
-  50% {
-    transform: translateY(-15px) rotate(180deg);
-  }
-  75% {
-    transform: translateY(-45px) rotate(270deg);
-  }
-}
 
 /* Create Restaurant Card */
 .create-restaurant-card {
@@ -93,21 +27,10 @@
   padding: 3rem;
   width: 100%;
   max-width: 550px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   animation: slideInScale 0.8s ease-out;
 }
 
-@keyframes slideInScale {
-  from {
-    opacity: 0;
-    transform: translateY(50px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 /* Restaurant Header */
 .restaurant-header {
@@ -130,17 +53,7 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 20px 50px rgba(255, 107, 107, 0.6);
-  }
-}
+
 
 .restaurant-title {
   font-size: 2.5rem;
@@ -192,7 +105,6 @@
 
 .custom-input:focus {
   border-color: #fcb69f;
-  box-shadow: 0 0 0 0.25rem rgba(252, 182, 159, 0.25);
   background: white;
   transform: translateY(-2px);
 }
@@ -204,7 +116,7 @@
 
 /* Create Button */
 .create-btn {
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  background: linear-gradient(#fcb69f 100%);
   border: none;
   border-radius: 15px;
   padding: 1.25rem 2rem;
@@ -229,14 +141,6 @@
   transition: left 0.6s;
 }
 
-.create-btn:hover::before {
-  left: 100%;
-}
-
-.create-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(252, 182, 159, 0.5);
-}
 
 .create-btn:disabled {
   opacity: 0.7;

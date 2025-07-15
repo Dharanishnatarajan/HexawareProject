@@ -41,12 +41,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <div className="register-background">
-        <div className="floating-elements">
-          <div className="element element-1">🍕</div>
-          <div className="element element-2">🍔</div>
-          <div className="element element-3">🍜</div>
-          <div className="element element-4">🥗</div>
-        </div>
+        
       </div>
 
       <div className="register-card">
