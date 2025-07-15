@@ -35,9 +35,7 @@ Swagger (for API documentation)
 
 🏗️ Project Architecture
 Folder Structure (Frontend)
-less
-Copy
-Edit
+
 src/
 ├── api/                  // Axios API service handlers
 ├── components/           // Reusable UI components (Navbar, Cards, etc.)
@@ -46,10 +44,9 @@ src/
 ├── utils/                // Utility functions
 ├── assets/               // Images and icons
 └── main.jsx              // Entry point
+
 Folder Structure (Backend)
-less
-Copy
-Edit
+
 HotPot.API/
 ├── Controllers/          // API endpoints (Auth, Restaurant, Menu, Orders)
 ├── Models/               // Entity models
@@ -60,6 +57,7 @@ HotPot.API/
 ├── MappingProfiles/      // AutoMapper configurations
 ├── Middleware/           // JWT and exception handling
 └── Program.cs            // App configuration
+
 🔐 Authentication & Authorization
 JWT-based login and secure token handling.
 
@@ -91,6 +89,7 @@ Refresh token & token revocation included.
 💳 Checkout Flow (placeholder for payments)
 
 🏬 Restaurant Owner Features
+
 🔐 Secure Login
 
 📋 Add, Update, Delete Menu Items
@@ -99,9 +98,10 @@ Refresh token & token revocation included.
 
 📦 View All Orders Placed
 
-🧾 Order Status Tracking (future scope)
+🧾 Order Status Tracking 
 
-🛡️ Admin Panel (Optional/Upcoming)
+🛡️ Admin Panel 
+
 🔍 View and Manage All Users
 
 📊 Manage All Restaurants
@@ -111,7 +111,9 @@ Refresh token & token revocation included.
 📈 View Reports and Metrics
 
 🔄 API Endpoints Overview
+
 🔑 Authentication
+
 POST /api/auth/register
 
 POST /api/auth/login
@@ -126,6 +128,7 @@ POST /api/restaurants
 GET /api/restaurants/{id}/menu
 
 🗂️ Menu Items
+
 GET /api/menu/categories
 
 POST /api/menu/items
@@ -135,6 +138,7 @@ PUT /api/menu/items/{id}
 DELETE /api/menu/items/{id}
 
 🛒 Cart
+
 GET /api/cart
 
 POST /api/cart/items
@@ -144,6 +148,7 @@ PUT /api/cart/items/{id}
 DELETE /api/cart/items/{id}
 
 🧾 Orders
+
 POST /api/orders
 
 GET /api/orders/user
@@ -151,7 +156,9 @@ GET /api/orders/user
 GET /api/orders/restaurant/{id}
 
 🌍 Environment Setup
+
 Prerequisites
+
 Node.js, npm
 
 .NET SDK
