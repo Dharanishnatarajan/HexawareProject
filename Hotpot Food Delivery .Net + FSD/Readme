@@ -1,0 +1,161 @@
+🍽️ HotPot - Online Food Delivery App (HotByte)
+Welcome to HotPot – a comprehensive full-stack Online Food Delivery Platform designed for a seamless experience for users, restaurants, and administrators. This project combines a React.js frontend with a C# ASP.NET Core Web API backend and uses Microsoft SQL Server as the database.
+
+📚 Project Overview
+HotPot allows users to explore nearby restaurants, browse categorized menus, manage carts, place orders, and track delivery. Restaurants can manage their menu and orders, while admins have full control over user and restaurant management.
+
+🔧 Tech Stack
+Frontend
+React.js (Vite )
+
+React Router DOM
+
+Axios
+
+React Hot Toast
+
+State Management: useState, useEffect, context API (if needed)
+
+Backend
+ASP.NET Core Web API (.NET 7/8)
+
+Entity Framework Core
+
+AutoMapper
+
+JWT Authentication
+
+Role-based Authorization
+
+SQL Server
+
+LINQ
+
+Swagger (for API documentation)
+
+🏗️ Project Architecture
+Folder Structure (Frontend)
+less
+Copy
+Edit
+src/
+├── api/                  // Axios API service handlers
+├── components/           // Reusable UI components (Navbar, Cards, etc.)
+├── pages/                // Page-level components (Login, Home, Orders, etc.)
+├── styles/               // CSS and Tailwind styles
+├── utils/                // Utility functions
+├── assets/               // Images and icons
+└── main.jsx              // Entry point
+Folder Structure (Backend)
+less
+Copy
+Edit
+HotPot.API/
+├── Controllers/          // API endpoints (Auth, Restaurant, Menu, Orders)
+├── Models/               // Entity models
+├── DTOs/                 // Data transfer objects
+├── Services/             // Business logic
+├── Data/                 // DbContext and Migrations
+├── Repositories/         // Data access layer
+├── MappingProfiles/      // AutoMapper configurations
+├── Middleware/           // JWT and exception handling
+└── Program.cs            // App configuration
+🔐 Authentication & Authorization
+JWT-based login and secure token handling.
+
+Roles:
+
+User: browse, add to cart, place orders.
+
+Restaurant Owner: manage menu, view orders.
+
+Admin: manage users and restaurants.
+
+Refresh token & token revocation included.
+
+🧑‍🍳 User Features
+✅ Sign Up / Login / Logout
+
+🛍️ Browse Restaurants & Food Items
+
+🍽️ View Menu by Categories (e.g., Starters, Main Course)
+
+➕ Add to Cart / Update / Remove Items
+
+🧾 Place Orders with Order Summary
+
+📜 View Order History
+
+🎯 Real-time Cart Badge and Toast Notifications
+
+💳 Checkout Flow (placeholder for payments)
+
+🏬 Restaurant Owner Features
+🔐 Secure Login
+
+📋 Add, Update, Delete Menu Items
+
+🗂️ Menu Organized by Categories
+
+📦 View All Orders Placed
+
+🧾 Order Status Tracking (future scope)
+
+🛡️ Admin Panel (Optional/Upcoming)
+🔍 View and Manage All Users
+
+📊 Manage All Restaurants
+
+🚫 Block/Unblock Users or Restaurants
+
+📈 View Reports and Metrics
+
+🔄 API Endpoints Overview
+🔑 Authentication
+POST /api/auth/register
+
+POST /api/auth/login
+
+POST /api/auth/refresh-token
+
+🍽️ Restaurant
+GET /api/restaurants
+
+POST /api/restaurants
+
+GET /api/restaurants/{id}/menu
+
+🗂️ Menu Items
+GET /api/menu/categories
+
+POST /api/menu/items
+
+PUT /api/menu/items/{id}
+
+DELETE /api/menu/items/{id}
+
+🛒 Cart
+GET /api/cart
+
+POST /api/cart/items
+
+PUT /api/cart/items/{id}
+
+DELETE /api/cart/items/{id}
+
+🧾 Orders
+POST /api/orders
+
+GET /api/orders/user
+
+GET /api/orders/restaurant/{id}
+
+🌍 Environment Setup
+Prerequisites
+Node.js, npm
+
+.NET SDK
+
+Microsoft SQL Server
+
+Visual Studio / VS Code
